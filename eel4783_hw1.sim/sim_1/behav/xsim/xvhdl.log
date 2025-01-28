@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/minec/classes/eel4783/hw/eel4783_hw1/eel4783_hw1.srcs/sources_1/new/Mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Mux'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/minec/classes/eel4783/hw/eel4783_hw1/eel4783_hw1.srcs/sim_1/new/Mux_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Mux_TB'
