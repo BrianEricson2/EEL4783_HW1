@@ -1,11 +1,11 @@
 `timescale 1ns / 1ps
 
-module Mux_TB();
+module Mux_TB_Verilog();
     reg [2:0] T_I3, T_I2, T_I1, T_I0;
     reg [1:0] T_S;
     wire [2:0] T_O;
     reg [2:0] err_cnt;
-    Mux DUT (.I3(T_I3), .I2(T_I2), .I1(T_I1),
+    Mux_Verilog DUT (.I3(T_I3), .I2(T_I2), .I1(T_I1),
         .I0(T_I0), .S(T_S), .O(T_O));
         
     initial begin

@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module Mux(
+module Mux_Verilog(
     input [2:0] I3, I2, I1, I0,
     input [1:0] S,
     output [2:0] O

@@ -4,12 +4,12 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.std_logic_arith.all;
 
-entity Mux_TB is            -- empty entity
-end Mux_TB;
+entity Mux_TB_VHDL is            -- empty entity
+end Mux_TB_VHDL;
 
 -----------------------------------------------
 
-architecture TB of Mux_TB is
+architecture TB of Mux_TB_VHDL is
     -- initialize the declared signals
     signal T_I3: std_logic_vector(2 downto 0):="000";
     signal T_I2: std_logic_vector(2 downto 0):="000";
@@ -18,7 +18,7 @@ architecture TB of Mux_TB is
     signal T_O: std_logic_vector(2 downto 0);
     signal T_S: std_logic_vector(1 downto 0);
     
-    component Mux
+    component Mux_VHDL
     port(       I3:     in std_logic_vector(2 downto 0);
                 I2:     in std_logic_vector(2 downto 0);
                 I1:     in std_logic_vector(2 downto 0);
@@ -29,7 +29,7 @@ architecture TB of Mux_TB is
     end component;
     
 begin
-    U_Mux: Mux port map (T_I3, T_I2, T_I1, T_I0, T_S, T_O);
+    U_Mux: Mux_VHDL port map (T_I3, T_I2, T_I1, T_I0, T_S, T_O);
     process
         variable err_cnt: integer :=0;
     begin
@@ -94,7 +94,7 @@ begin
 end TB;
 
 -----------------------------------------------
-configuration CFG_TB of Mux_TB is
+configuration CFG_TB of Mux_TB_VHDL is
         for TB
         end for;
 end CFG_TB;
