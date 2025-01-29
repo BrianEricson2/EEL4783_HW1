@@ -1,3 +1,6 @@
 Time resolution is 1 ps
-Note: Testbench of Adder completed successfully!
-Time: 54 ns  Iteration: 0  Process: /DECODER_TB/line__30  File: C:/Users/minec/classes/eel4783/hw/eel4783_hw1/eel4783_hw1.srcs/sim_1/new/tb_decoder.vhd
+Error Case 1
+Error Case 1
+Error Case 2
+Error Case 3
+Testbench of Mux completed successfully!

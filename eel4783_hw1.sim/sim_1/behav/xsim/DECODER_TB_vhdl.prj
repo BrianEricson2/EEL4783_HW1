@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../eel4783_hw1.srcs/sources_1/new/Decoder_VHDL.vhd" \
-"../../../../eel4783_hw1.srcs/sim_1/new/tb_decoder.vhd" \
-
-# Do not sort compile order
-nosort

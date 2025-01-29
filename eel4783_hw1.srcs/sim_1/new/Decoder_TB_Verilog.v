@@ -5,12 +5,13 @@ module Decoder_TB_Verilog(
     );
     
     reg [1:0] T_I;
-    wire [2:0] T_O;
+    wire [3:0] T_O;
     reg [2:0] err_cnt;
     Decoder_Verilog DUT (.I(T_I), .O(T_O));
         
     initial begin
-        T_I = 2'b00;
+        err_cnt <= 0;
+        T_I <= 2'b00;
         
         // case select equal "00"
         #10
