@@ -16,15 +16,16 @@ architecture TB of DECODER_TB is
     signal T_O: std_logic_vector(3 downto 0);
 	
     -- declare the component
-    component DECODER
-    port(	I:	in std_logic_vector(1 downto 0);
-	 	O:	out std_logic_vector(3 downto 0)
-    );
+    component Decoder_VHDL
+port(
+        I: in std_logic_vector(1 downto 0);
+        O: out std_logic_vector(3 downto 0)
+);
     end component;
 
 begin
 
-    U_DECODER: DECODER port map (T_I, T_O);
+    U_DECODER: Decoder_VHDL port map (T_I, T_O);
 	
     process
 
@@ -75,7 +76,9 @@ begin
 		
 	-- case "11"
 	wait for 10 ns;
-	T_I <= "UU";		
+	T_I <= "UU";
+	
+		
 
 	-- summary of all the tests
 	if (err_cnt=0) then 			
